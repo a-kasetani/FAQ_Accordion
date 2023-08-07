@@ -102,14 +102,69 @@ main {
   display: flex;
 }
 
-/*-----------mainvisual--------------*/
+.container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 180px 40px 40px 40px;
+  width: 450px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 200px auto;
+  align-items: center;
+}
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+
+/*-----------mainvisual pc--------------*/
 .mainvisual_pc {
   display: none;
 }
+@media screen and (min-width: 900px) {
+  .mainvisual_pc {
+    display: block;
+    position: relative;
+    width: 500px;
+  }
+}
 
+.pc_shadow {
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pc_box {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pc_woman {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*-----------mainvisual sp--------------*/
 .mainvisual_sp {
   display: block;
   position: relative;
+}
+@media screen and (min-width: 900px) {
+  .mainvisual_sp {
+    display: none;
+  }
 }
 
 .sp_woman {
@@ -125,16 +180,10 @@ main {
 }
 
 /*-----------contents--------------*/
-.container {
-  background-color: white;
-  border-radius: 20px;
-  padding: 180px 40px 40px 40px;
-  width: 450px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 200px auto;
-  align-items: center;
+@media screen and (min-width: 900px) {
+  .faq {
+    width: 500px;
+  }
 }
 
 h1 {
@@ -142,6 +191,11 @@ h1 {
   font-size: 3.6rem;
   margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 900px) {
+  h1 {
+    text-align: left;
+  }
 }
 
 .question {

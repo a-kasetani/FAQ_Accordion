@@ -88,6 +88,8 @@ body {
     --SoftViolet: hsl(273, 75%, 66%);
     --SoftBlue: hsl(240, 73%, 65%);
 }
+
+
 /*-----------color--------------*/
 main{
     font-family: 'Kumbh Sans', sans-serif;
@@ -100,17 +102,69 @@ main{
 	display: flex;
 }
 
-/*-----------mainvisual--------------*/
+.container{
+	background-color: #ffff;
+	border-radius: 20px;
+	padding: 180px 40px 40px 40px;
+	width: 450px;
+	height: fit-content;
+	margin: 200px auto;
+	align-items: center;
+
+	@include pc{
+		display: flex;
+		width: 1000px;
+		height: 600px;
+		margin: 0 auto;
+		padding: 40px;
+	}
+}
+
+/*-----------mainvisual pc--------------*/
 
 .mainvisual_pc{
 	display: none;
+
+	@include pc{
+		display: block;
+		position: relative;
+		width: 500px;
+
+	}
 }
-	
+
+.pc_shadow{
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+.pc_box{
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pc_woman{
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*-----------mainvisual sp--------------*/
+
 .mainvisual_sp{
 	display: block;
 	position: relative;
-}
 
+	@include pc{
+		display: none;
+	}
+}
 
 .sp_woman{
 	position: absolute;
@@ -126,16 +180,11 @@ main{
 	
 
 /*-----------contents--------------*/
-.container{
-	background-color: #ffff;
-	border-radius: 20px;
-	padding: 180px 40px 40px 40px;
 
-		width: 450px;
-		height: fit-content;
-		margin: 200px auto;
-		align-items: center;
-
+.faq{
+	@include pc{
+		width: 500px;
+	}
 }
 
 h1{
@@ -143,6 +192,10 @@ h1{
 	font-size: 3.6rem;
 	margin-bottom: 30px;
 	text-align: center;
+
+	@include pc{
+		text-align: left;
+	}
 }
 
 .question{
