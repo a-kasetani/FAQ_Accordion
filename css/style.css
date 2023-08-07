@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -228,6 +229,10 @@ li {
 .question.open::after {
   transform: translateX(50%) rotate(180deg);
   transition: 1s;
+  /*--------回転後の位置調整---------*/
+  position: absolute;
+  top: 6px;
+  right: 4px;
 }
 
 .open {

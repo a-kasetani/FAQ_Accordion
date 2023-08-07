@@ -228,6 +228,10 @@ li{
 .question.open::after{
 	transform: translateX(50%) rotate(180deg);
 	transition: 1.0s;
+	/*--------回転後の位置調整---------*/
+	position: absolute;
+	top: 6px;
+	right: 4px;
 }
 
 .open{
