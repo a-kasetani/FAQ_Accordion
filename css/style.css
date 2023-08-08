@@ -108,10 +108,8 @@ main {
   border-radius: 20px;
   padding: 180px 40px 40px 40px;
   width: 450px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 200px auto;
+  height: 650px;
+  margin: 200px auto 0 auto;
   align-items: center;
 }
 @media screen and (min-width: 900px) {
@@ -119,7 +117,7 @@ main {
     display: flex;
     width: 1000px;
     height: 600px;
-    margin: 0 auto;
+    margin: auto;
     padding: 40px;
   }
 }
@@ -143,25 +141,27 @@ main {
 }
 
 .pc_shadow {
-  height: 600px;
   position: absolute;
-  top: 0;
-  left: 0;
+  overflow: hidden;
+  width: 700px;
+  top: -50px;
+  left: -300px;
 }
 
 .pc_box {
-  width: 100px;
+  width: 150px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 220px;
+  left: -140px;
   z-index: 1;
 }
 
 .pc_woman {
   position: absolute;
-  width: 300px;
-  top: 0;
-  left: 0;
+  overflow: hidden;
+  width: 100%;
+  top: 80px;
+  left: -100px;
 }
 
 /*-----------mainvisual sp--------------*/
@@ -192,7 +192,7 @@ main {
   .faq {
     width: 50%;
     height: 100%;
-    padding: 50px 20px 0 20px;
+    padding: 30px 20px 0 20px;
   }
 }
 
@@ -254,15 +254,5 @@ li {
   font-size: 1.6rem;
   margin-bottom: 20px;
   width: 90%;
-}
-
-/*-----------attribution-------------*/
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
 }
 /*# sourceMappingURL=style.css.map */
