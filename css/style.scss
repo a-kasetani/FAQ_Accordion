@@ -90,7 +90,7 @@ body {
 }
 
 
-/*-----------color--------------*/
+/*-----------共通--------------*/
 main{
     font-family: 'Kumbh Sans', sans-serif;
 	font-size: 1.7rem;
@@ -122,14 +122,19 @@ main{
 
 /*-----------mainvisual pc--------------*/
 
+.mainvisual{
+	@include pc{
+		width: 50%;
+		height: 100%;
+	}
+}
+
 .mainvisual_pc{
 	display: none;
 
 	@include pc{
 		display: block;
 		position: relative;
-		width: 500px;
-
 	}
 }
 
@@ -146,11 +151,12 @@ main{
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 
 .pc_woman{
-	width: 100px;
 	position: absolute;
+	width: 300px;
 	top: 0;
 	left: 0;
 }
@@ -183,7 +189,9 @@ main{
 
 .faq{
 	@include pc{
-		width: 500px;
+		width: 50%;
+		height: 100%;
+		padding: 50px 20px 0 20px;
 	}
 }
 
